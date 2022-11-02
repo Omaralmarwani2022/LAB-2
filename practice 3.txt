@@ -1,0 +1,9 @@
+ORG 100h 
+ 
+MOV SI, OFFSET array
+MOV AL, [SI]
+LO: INC SI
+ADD AL,[SI]
+LOOP LO
+RET    
+array DB [1h,2h,3h,4h]
